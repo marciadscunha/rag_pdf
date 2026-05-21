@@ -1,12 +1,45 @@
-# RAG PDF com LANGCHAIN
+# 📄 RAG PDF com LangChain
 
-Converse com arquivos usando RAG e Langchain
+Sistema de conversação com PDFs utilizando:
 
-# CLONE O REPO
+- LangChain
+- RAG (Retrieval-Augmented Generation)
+- OpenAI
+- FAISS
+- Streamlit
 
-## Instale os requisitos
-pip install -r requirements.txt
+O projeto permite carregar documentos PDF e conversar com eles utilizando IA generativa.
 
-# Execute
+---
 
-''' streamlit run app.py '''
+# Funcionalidades
+
+✅ Upload e leitura de PDFs  
+✅ Chunking automático de documentos  
+✅ Embeddings com OpenAI  
+✅ Busca vetorial com FAISS  
+✅ Conversação contextual  
+✅ Memória de conversa  
+✅ Interface web com Streamlit  
+✅ Arquitetura modular pronta para evolução
+
+---
+
+# Arquitetura RAG
+
+```text
+PDFs
+ ↓
+Loader (PyMuPDF)
+ ↓
+Chunking
+ ↓
+Embeddings
+ ↓
+FAISS Vector Store
+ ↓
+Retriever
+ ↓
+LLM (OpenAI)
+ ↓
+Resposta contextual
